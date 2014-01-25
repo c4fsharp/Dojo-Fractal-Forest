@@ -9,5 +9,5 @@ The dojo was inspired by the post ["Create Fractals with Recursive Drawing"](htt
 It is a good exercise in **recursion**.
 This Dojo is **suitable for beginners**, and should be **doable in one hour**.
 
-[simple-tree]: https://github.com/c4fsharp/Dojo-Fractal-Forest/blob/master/Assets/tall-tree.jpg "Fractal tree"
-[kidney-tree]: https://github.com/c4fsharp/Dojo-Fractal-Forest/blob/master/Assets/kidney-tree.jpg "Kidney-shaped fractal tree"
+[simple-tree]: https://raw.github.com/c4fsharp/Dojo-Fractal-Forest/master/Assets/tall-tree.jpg "Fractal tree"
+[kidney-tree]: https://raw.github.com/c4fsharp/Dojo-Fractal-Forest/master/Assets/kidney-tree.jpg "Kidney-shaped fractal tree"
