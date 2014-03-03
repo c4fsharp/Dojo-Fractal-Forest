@@ -8,6 +8,7 @@ let form = new Form(Width = width, Height = height)
 let box = new PictureBox(BackColor = Color.White, Dock = DockStyle.Fill)
 let image = new Bitmap(width, height)
 let graphics = Graphics.FromImage(image)
+graphics.SmoothingMode <- System.Drawing.Drawing2D.SmoothingMode.HighQuality
 let brush = new SolidBrush(Color.FromArgb(0, 0, 0))
 
 box.Image <- image
