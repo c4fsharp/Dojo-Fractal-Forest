@@ -8,6 +8,11 @@ let form = new Form(Width = width, Height = height)
 let box = new PictureBox(BackColor = Color.White, Dock = DockStyle.Fill)
 let image = new Bitmap(width, height)
 let graphics = Graphics.FromImage(image)
+//The following line produces higher quality images, 
+//at the expense of speed. Uncomment it if you want
+//more beautiful images, even if it's slower.
+//Thanks to https://twitter.com/AlexKozhemiakin for the tip!
+//graphics.SmoothingMode <- System.Drawing.Drawing2D.SmoothingMode.HighQuality
 let brush = new SolidBrush(Color.FromArgb(0, 0, 0))
 
 box.Image <- image
