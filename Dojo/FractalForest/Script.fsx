@@ -55,7 +55,7 @@ draw x y (pi*(0.5 - 0.4)) 50. 2.
 form.ShowDialog()
 
 (* To do a nice fractal tree, using recursion is
-probably a good idea. The two following link might
+probably a good idea. The following link might
 come in handy if you have never used recursion in F#:
 http://en.wikibooks.org/wiki/F_Sharp_Programming/Recursion
 *)
