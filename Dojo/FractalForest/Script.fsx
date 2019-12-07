@@ -9,7 +9,7 @@ let inTemplate' width height content =
     sprintf """
 <html>
 <body>
-    <h1>Turtles & F#!</h1>
+    <h1>Fractal Trees & F#!</h1>
     <svg width="%i" height="%i">
 %s
     </svg>
@@ -18,10 +18,10 @@ let inTemplate' width height content =
 
 let inTemplate content = inTemplate' width height content
 
-let svgLine (x1,y1,x2,y2) =
+let svgLine (x1,y1,x2,y2,width) =
     sprintf
-        """<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="black" />"""
-        x1 y1 x2 y2
+        """<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="black" stroke-width="%.1f" />"""
+        x1 y1 x2 y2 width
 
 // Compute the endpoint of a line
 // starting at x, y, going at a certain angle
@@ -37,7 +37,7 @@ let drawLine (x : float) (y : float)
     let x_end, y_end = endpoint x y angle length
     let xo,yo = (single)x, (single)(y |> flip)
     let xd,yd = (single)x_end, (single)(y_end |> flip)
-    svgLine(xo, yo, xd, yd)
+    svgLine(xo, yo, xd, yd, (single)width)
 
 
 
